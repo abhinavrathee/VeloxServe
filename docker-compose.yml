@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  veloxserve:
+    build: .
+    image: veloxserve:latest
+    container_name: veloxserve
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./veloxserve.conf:/opt/veloxserve/veloxserve.conf:ro
+      - ./www:/opt/veloxserve/www:ro
+      - ./logs:/opt/veloxserve/logs
+    restart: unless-stopped
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
