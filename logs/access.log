@@ -4989,3 +4989,61 @@
 127.0.0.1 - - [31/Mar/2026:19:41:35 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
 127.0.0.1 - - [31/Mar/2026:19:41:45 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
 127.0.0.1 - - [31/Mar/2026:19:41:55 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:19:15 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:19:16 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 4ms
+172.18.0.1 - - [31/Mar/2026:21:19:21 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:19:25 +0000] "GET /metrics HTTP/1.1" 200 171 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:19:25 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:19:36 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:19:46 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:19:56 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:20:06 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:20:16 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:20:26 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:20:36 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:20:46 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:20:56 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:21:06 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:21:16 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:21:22 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:21:24 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:21:24 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:21:26 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:21:36 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:21:47 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:21:57 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:22:07 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:22:17 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:22:27 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:22:37 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:22:47 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:22:57 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:22:58 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 1ms
+172.18.0.1 - - [31/Mar/2026:21:22:58 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:22:58 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:22:59 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:22:59 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:23:01 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:23:07 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:23:17 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:23:27 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:23:36 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 1ms
+127.0.0.1 - - [31/Mar/2026:21:23:37 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:23:39 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:23:39 +0000] "GET /favicon.ico HTTP/1.1" 404 429 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 10ms
+127.0.0.1 - - [31/Mar/2026:21:23:47 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:23:47 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:23:48 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:23:57 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:23:59 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:24:00 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:24:00 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:24:00 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:24:00 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:24:03 +0000] "GET / HTTP/1.1" 200 5875 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:24:03 +0000] "GET /favicon.ico HTTP/1.1" 404 429 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 5ms
+127.0.0.1 - - [31/Mar/2026:21:24:07 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:24:17 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:24:28 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:24:38 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:24:48 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
