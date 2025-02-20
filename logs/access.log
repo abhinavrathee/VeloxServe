@@ -5070,3 +5070,71 @@
 127.0.0.1 - - [31/Mar/2026:21:28:08 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
 127.0.0.1 - - [31/Mar/2026:21:28:18 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
 127.0.0.1 - - [31/Mar/2026:21:28:28 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:28:43 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:28:45 +0000] "GET / HTTP/1.1" 200 16254 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 5ms
+172.18.0.1 - - [31/Mar/2026:21:28:52 +0000] "GET /metrics HTTP/1.1" 200 172 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:28:53 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:28:56 +0000] "GET /metrics HTTP/1.1" 200 172 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:29:03 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:29:13 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:29:23 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:29:33 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:29:43 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:29:53 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:30:03 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:30:13 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:30:23 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:30:25 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:30:33 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:30:43 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:30:54 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:31:04 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:31:14 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:31:24 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:25 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:27 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:28 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:28 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:29 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:29 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:30 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:30 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:30 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:30 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:30 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:31 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:31 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:31 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:31 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:31 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:32 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:32 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:32 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:32 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:32 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:32 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:33 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:33 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:33 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:33 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:33 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:34 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:31:34 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:34 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:34 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:34 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:34 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:35 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:35 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:35 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:35 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:35 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:36 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:36 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:36 +0000] "GET /metrics HTTP/1.1" 200 173 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+172.18.0.1 - - [31/Mar/2026:21:31:39 +0000] "GET / HTTP/1.1" 200 16254 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 0ms
+127.0.0.1 - - [31/Mar/2026:21:31:44 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:31:54 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:32:04 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:32:14 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
+127.0.0.1 - - [31/Mar/2026:21:32:24 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/7.81.0" 0ms
