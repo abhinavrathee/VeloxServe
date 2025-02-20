@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VeloxServe | Systems Architecture</title>
+    <title>VeloxServe | High-Performance Architecture</title>
     <!-- Custom SVG Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0a'/><path d='M50 20L80 35V65L50 80L20 65V35L50 20Z' fill='%23111' stroke='%2310b981' stroke-width='4'/><path d='M40 38L50 56L60 36' stroke='%2310b981' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg>">
-    <!-- Modern Enterprise Font -->
+    
+    <!-- Ultra-Premium Enterprise Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --bg-base: #000000;
-            --bg-surface: #0a0a0a;
-            --border-subtle: #1f1f1f;
-            --border-glow: #2a2a2a;
+            --bg-grid: rgba(255, 255, 255, 0.03);
+            --border-subtle: rgba(255, 255, 255, 0.1);
+            --border-glow: rgba(16, 185, 129, 0.5);
             --text-primary: #ffffff;
-            --text-secondary: #888888;
-            --accent: #10b981; /* Precise Green Server Glow */
-            --accent-dim: rgba(16, 185, 129, 0.15);
+            --text-secondary: #a0a0a0;
+            --accent: #10b981; 
+            --accent-glow: #34d399;
         }
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
             background-color: var(--bg-base);
+            /* Ultra-premium subtle engineering grid background */
+            background-image: 
+                linear-gradient(var(--bg-grid) 1px, transparent 1px),
+                linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: center top;
             color: var(--text-primary);
             margin: 0;
             padding: 0;
@@ -35,7 +43,7 @@
             overflow-x: hidden;
         }
 
-        /* Hero Section with Intense Glow and Animation */
+        /* Hero Section with Intense Glow & Typography */
         .hero {
             position: relative;
             width: 100%;
@@ -43,120 +51,141 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 100px 20px 60px;
+            padding: 120px 20px 80px;
             border-bottom: 1px solid var(--border-subtle);
         }
 
         .hero::before {
             content: '';
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 700px;
-            height: 700px;
-            background: radial-gradient(circle, var(--accent-dim) 0%, rgba(0,0,0,0) 60%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, rgba(0,0,0,0) 65%);
             z-index: 0;
             pointer-events: none;
         }
 
-        /* Advanced Custom SVG Logo */
+        /* Advanced Custom SVG Logo Premium Edition */
         .logo-container {
             position: relative;
-            z-index: 1;
-            margin-bottom: 24px;
-            animation: float 6s ease-in-out infinite;
+            z-index: 2;
+            margin-bottom: 32px;
+            animation: levitate 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
         }
 
-        @keyframes float {
-            0% { transform: translateY(0px); filter: drop-shadow(0 0 20px var(--accent-dim)); }
-            50% { transform: translateY(-12px); filter: drop-shadow(0 0 30px rgba(16, 185, 129, 0.3)); }
-            100% { transform: translateY(0px); filter: drop-shadow(0 0 20px var(--accent-dim)); }
+        @keyframes levitate {
+            0% { transform: translateY(0px) scale(1); filter: drop-shadow(0 0 25px rgba(16, 185, 129, 0.15)); }
+            50% { transform: translateY(-15px) scale(1.02); filter: drop-shadow(0 0 45px rgba(16, 185, 129, 0.4)); }
+            100% { transform: translateY(0px) scale(1); filter: drop-shadow(0 0 25px rgba(16, 185, 129, 0.15)); }
         }
 
         .logo-svg {
-            width: 140px;
-            height: 140px;
+            width: 160px;
+            height: 160px;
         }
 
-        .logo-core {
-            transform-origin: center;
-            animation: spin 20s linear infinite;
+        .spin-slow {
+            transform-origin: 50px 50px;
+            animation: spin 30s linear infinite;
+        }
+        
+        .spin-fast-reverse {
+            transform-origin: 50px 50px;
+            animation: spin-reverse 15s linear infinite;
         }
 
-        @keyframes spin {
-            100% { transform: rotate(360deg); }
-        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        @keyframes spin-reverse { 100% { transform: rotate(-360deg); } }
 
+        /* Premium Pulsing Badge */
         .status-badge {
-            z-index: 1;
+            z-index: 2;
             display: inline-flex;
             align-items: center;
-            background: #050505;
-            border: 1px solid var(--border-subtle);
-            padding: 6px 16px;
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            padding: 8px 20px;
             border-radius: 60px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 600;
-            margin-bottom: 24px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
         }
 
         .status-dot {
-            width: 8px;
-            height: 8px;
-            background-color: var(--accent);
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent-glow);
             border-radius: 50%;
             margin-right: 12px;
-            box-shadow: 0 0 10px var(--accent);
+            box-shadow: 0 0 15px var(--accent-glow);
+            animation: pulse-dot 2s ease-out infinite;
         }
 
+        @keyframes pulse-dot {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Typography Mastery */
         h1 {
-            z-index: 1;
-            font-size: 3.5rem;
-            font-weight: 700;
-            letter-spacing: -2px;
-            margin: 0 0 16px 0;
+            z-index: 2;
+            font-size: 4.5rem;
+            font-weight: 800;
+            letter-spacing: -2.5px;
+            margin: 0 0 20px 0;
             text-align: center;
+            background: linear-gradient(180deg, #ffffff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         h1 span {
-            color: var(--text-secondary);
+            background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .subtitle {
-            z-index: 1;
+            z-index: 2;
             color: var(--text-secondary);
-            font-size: 1.25rem;
-            max-width: 600px;
+            font-size: 1.35rem;
+            max-width: 680px;
             text-align: center;
-            line-height: 1.6;
+            line-height: 1.7;
             margin: 0;
             font-weight: 400;
         }
 
-        /* Glassmorphism Feature Grid */
+        /* Ultimate Glassmorphism Feature Grid */
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             width: 100%;
-            padding: 60px 40px;
+            padding: 80px 40px;
             box-sizing: border-box;
+            z-index: 2;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 32px;
         }
 
         .card {
-            background: rgba(10, 10, 10, 0.6);
-            backdrop-filter: blur(10px);
+            background: rgba(15, 15, 15, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid var(--border-subtle);
-            border-radius: 12px;
-            padding: 32px;
-            transition: all 0.3s ease;
+            border-radius: 16px;
+            padding: 40px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: hidden;
         }
@@ -167,13 +196,22 @@
             top: 0; left: 0; right: 0; height: 1px;
             background: linear-gradient(90deg, transparent, var(--border-glow), transparent);
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.4s ease;
+        }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            opacity: 0.3;
         }
 
         .card:hover {
-            border-color: #333;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+            transform: translateY(-5px) scale(1.02);
+            border-color: rgba(16, 185, 129, 0.3);
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.8), 0 0 30px -10px rgba(16, 185, 129, 0.15);
+            background: rgba(20, 20, 20, 0.8);
         }
 
         .card:hover::before {
@@ -181,56 +219,70 @@
         }
 
         .card h3 {
-            font-size: 1.2rem;
-            font-weight: 500;
+            font-size: 1.4rem;
+            font-weight: 600;
             margin: 0 0 16px 0;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 16px;
             color: #fff;
+            letter-spacing: -0.5px;
         }
 
-        .card h3 svg {
+        .card-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
             color: var(--accent);
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
         }
 
         .card p {
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             color: var(--text-secondary);
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
+        /* Footer Aesthetics */
         .footer {
-            margin-top: 40px;
+            margin-top: 60px;
             border-top: 1px solid var(--border-subtle);
-            padding-top: 32px;
+            padding-top: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: var(--text-secondary);
         }
 
         .btn {
-            background: transparent;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
             color: #fff;
             border: 1px solid var(--border-subtle);
-            padding: 8px 16px;
-            border-radius: 6px;
+            padding: 12px 24px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.2s ease;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
         }
 
         .btn:hover {
             border-color: var(--accent);
-            color: var(--accent);
-            background: rgba(16, 185, 129, 0.05);
+            color: var(--accent-glow);
+            background: rgba(16, 185, 129, 0.08);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
         }
 
-        @media (max-width: 600px) {
-            h1 { font-size: 2.5rem; }
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
             .grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -240,75 +292,107 @@
     <div class="hero">
         <div class="status-badge">
             <div class="status-dot"></div>
-            Core Proxy Online
+            Core Engine Operational
         </div>
 
         <div class="logo-container">
-            <!-- Custom Advanced SVG Forge/Core Logo -->
+            <!-- Ultra-Premium Architectural SVG Concept -->
             <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Outer Node Structural Ring -->
-                <circle cx="50" cy="50" r="44" stroke="#222" stroke-width="2" stroke-dasharray="4 6"/>
-                <circle cx="50" cy="50" r="38" stroke="#333" stroke-width="1"/>
+                <!-- Definitive Outer Layer with intense tech geometry -->
+                <circle cx="50" cy="50" r="48" stroke="url(#borderGradient)" stroke-width="1.5" stroke-dasharray="2 8"/>
+                <circle cx="50" cy="50" r="42" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
                 
-                <!-- Rotating Data Processing Rings -->
-                <g class="logo-core">
-                    <path d="M50 15C69.33 15 85 30.67 85 50" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M50 85C30.67 85 15 69.33 15 50" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
-                    <circle cx="85" cy="50" r="3" fill="#10b981"/>
-                    <circle cx="15" cy="50" r="3" fill="#10b981"/>
+                <!-- Heavy Tech Data Rings -->
+                <g class="spin-slow">
+                    <!-- Complex orbital tracking -->
+                    <path d="M50 12A38 38 0 1 1 12 50" stroke="rgba(16,185,129,0.4)" stroke-width="1.5" stroke-linecap="square"/>
+                    <path d="M50 88A38 38 0 0 1 12 50" stroke="rgba(16,185,129,0.8)" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="88" cy="50" r="4" fill="#10b981" filter="url(#glow)"/>
+                </g>
+                
+                <g class="spin-fast-reverse">
+                    <circle cx="50" cy="50" r="32" stroke="rgba(255,255,255,0.05)" stroke-width="4" stroke-dasharray="20 40"/>
+                    <path d="M50 18A32 32 0 0 0 18 50" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
                 </g>
 
-                <!-- Inner Epoll/Server Shield Cube -->
-                <path d="M50 25L70 36.5V59.5L50 71L30 59.5V36.5L50 25Z" fill="#0a0a0a" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+                <!-- Solid Proxy Dimensional Shield -->
+                <path d="M50 25L72 37.5V62.5L50 75L28 62.5V37.5L50 25Z" fill="#050505" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linejoin="round"/>
                 
-                <!-- Central Core Strike (V shape for Velox) -->
-                <path d="M40 40L50 56L60 36" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M45 45L50 54L55 42" stroke="#ffffff" stroke-width="1"/>
+                <!-- The Core V-Strike Geometry -->
+                <path d="M38 38L50 58L62 34" stroke="url(#coreGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+                <circle cx="50" cy="50" r="1.5" fill="#ffffff" filter="url(#glow)"/>
+
+                <defs>
+                    <linearGradient id="coreGradient" x1="38" y1="34" x2="62" y2="58" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#34d399"/>
+                        <stop offset="100%" stop-color="#059669"/>
+                    </linearGradient>
+                    <linearGradient id="borderGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#ffffff"/>
+                        <stop offset="50%" stop-color="rgba(0,0,0,0)"/>
+                        <stop offset="100%" stop-color="#10b981"/>
+                    </linearGradient>
+                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="3" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                    </filter>
+                </defs>
             </svg>
         </div>
 
-        <h1>VeloxServe <span>Proxy</span></h1>
-        <p class="subtitle">A hyper-optimized, production-grade HTTP/1.1 Engine and Reverse Proxy built strictly in C++17 leveraging native Linux Epoll multiplexing.</p>
+        <h1>VeloxServe <span>Architecture</span></h1>
+        <p class="subtitle">An enterprise-scale C++17 Reverse Proxy Engine. Replicating massive C10K concurrency via mathematical memory constraints and native Linux Epoll multiplexing boundaries.</p>
     </div>
 
     <div class="container">
         <div class="grid">
             <div class="card">
                 <h3>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    Epoll Thread Dispatch
+                    <div class="card-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    Epoll Native Multiplexing
                 </h3>
-                <p>Bypassing standard threaded constraints using Edge-Triggered OS kernel hooks to distribute massive I/O buffer states simultaneously without memory locks.</p>
+                <p>Eradicating conventional locking overhead through Edge-Triggered OS kernel hooks to distribute massive simultaneous I/O buffer states seamlessly.</p>
             </div>
             
             <div class="card">
                 <h3>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    Token-Bucket Algorithms
+                    <div class="card-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    Token-Bucket Defense
                 </h3>
-                <p>Protecting upstream microservices with mathematical precision. Invalidating rogue DDoS floods natively with instant 429 rejections before reaching application layers.</p>
+                <p>Protecting vulnerable upstream microservices through nanosecond-precision math. Dropping rogue DDoS packet floods with sterile 429 rejections.</p>
             </div>
             
             <div class="card">
                 <h3>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-                    Fail-Safe Load Balancing
+                    <div class="card-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    Resilient Load Balancing
                 </h3>
-                <p>Pinging backend cluster engines with background heartbeat probes. Autonomously executing Round-Robin routing and dead-node failover handling.</p>
+                <p>Operating background Heartbeat thread probes to ping API nodes autonomously, orchestrating automated Round-Robin logic and dead-node failover protocols.</p>
             </div>
             
             <div class="card">
                 <h3>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    O(1) Eviction Caching
+                    <div class="card-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    O(1) Memory Caching
                 </h3>
-                <p>Erasing slow mechanical drive I/O operations through an in-memory Dual-Linked Hash Map targeting strict microsecond static asset retrieval speeds.</p>
+                <p>Expediting volatile static operations natively from RAM via a Dual-Linked Eviction Hash Map targeting sub-millisecond retrieval thresholds.</p>
             </div>
         </div>
 
         <div class="footer">
-            <div><strong>Active Node:</strong> 127.0.0.1:8080</div>
-            <a href="/metrics" class="btn">View Analytics API</a>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+                <strong>Network Binding:</strong> 0.0.0.0:8080
+            </div>
+            <a href="/metrics" class="btn">View Telemetry Matrix ↗</a>
         </div>
     </div>
 
