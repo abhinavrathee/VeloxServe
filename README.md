@@ -14,6 +14,12 @@
 
 <br/>
 
+<div align="center">
+  <img src="./image.png" alt="VeloxServe Advanced Architecture Dashboard" width="100%" style="border-radius: 12px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+</div>
+
+<br/>
+
 **VeloxServe** is an enterprise-scale proxy engine heavily inspired by the internal architecture of **NGINX**. By dropping bulky external networking abstractions (like Boost.Asio) in favor of native Linux `sys/epoll.h` system calls, VeloxServe achieves extreme concurrency handling. It seamlessly resolves the **C10K problem** while actively protecting upstream microservices through strict Token-Bucket traffic shaping and O(1) Memory Caching.
 
 ---
