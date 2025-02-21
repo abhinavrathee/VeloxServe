@@ -1,21 +1,9 @@
 #pragma once
 
+#include "location_config.h"
 #include <string>
 #include <vector>
 #include <map>
-
-// Holds configuration for a single location block
-struct LocationConfig {
-    std::string path;           // "/api", "/static", "/"
-    std::string root;           // Document root override
-    std::string index_file = "index.html";
-    std::string proxy_pass;     // "http://127.0.0.1:3000" (empty = static)
-    std::vector<std::string> methods;  // {"GET", "POST"}
-    bool autoindex = false;
-
-    bool is_proxy() const { return !proxy_pass.empty(); }
-    bool is_method_allowed(const std::string& method) const;
-};
 
 // Holds configuration for a single server block
 struct ServerConfig {

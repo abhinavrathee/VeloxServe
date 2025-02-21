@@ -1,0 +1,37 @@
+{
+    "server": {
+        "name": "VeloxServe",
+        "version": "1.0.0"
+    },
+    "performance": {
+        "thread_pool_size": 0,
+        "max_connections": 65536,
+        "connection_timeout_sec": 30,
+        "keepalive_timeout_sec": 60,
+        "read_buffer_bytes": 8192,
+        "write_buffer_bytes": 65536
+    },
+    "cache": {
+        "enabled": true,
+        "max_memory_mb": 100,
+        "ttl_seconds": 300,
+        "cleanup_interval_sec": 60
+    },
+    "rate_limiter": {
+        "enabled": true,
+        "default_rate_per_sec": 100.0,
+        "burst_capacity": 200.0,
+        "cleanup_interval_sec": 3600
+    },
+    "load_balancer": {
+        "health_check_interval_sec": 5,
+        "max_failed_checks": 3,
+        "connect_timeout_sec": 2
+    },
+    "logging": {
+        "access_log": "./logs/access.log",
+        "error_log": "./logs/error.log",
+        "log_level": "INFO",
+        "log_to_console": true
+    }
+}
