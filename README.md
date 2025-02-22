@@ -156,4 +156,134 @@ Requests/sec:    107.76
 > **Evaluation:** Raw Epoll logic effortlessly scales over 1.3K simulated requests per thread. During pure overload scenarios, the `rate_limit 100;` threshold strictly enforces capacity, successfully parsing and rejecting the subsequent 328 overflow iterations perfectly as `HTTP 429` rejections without crashing the core thread pool.
 
 ---
-*Architected and engineered relentlessly from scratch in C++17 without heavy networking libraries.*
+
+## 🖥️ CLI Interface
+
+VeloxServe ships with a fully documented command-line interface:
+
+```bash
+$ veloxserve --help
+
+VeloxServe v1.0.0
+A high-performance C++17 HTTP server & reverse proxy
+
+Usage:
+  veloxserve [options] [config_file]
+
+Options:
+  -h, --help       Display this help message and exit
+  -v, --version    Display version information and exit
+  -t, --test       Test configuration file syntax and exit
+  -p, --port PORT  Override listen port (default: 8080)
+
+Signals:
+  SIGINT (Ctrl+C)  Graceful shutdown — drains active connections
+  SIGTERM          Graceful shutdown — used by Docker/systemd
+
+Endpoints:
+  /health          Returns 200 OK if server is operational
+  /metrics         Returns Prometheus-format server telemetry
+```
+
+---
+
+## 🧪 Testing Suite
+
+VeloxServe includes a comprehensive unit testing framework covering every critical module:
+
+| Test File | Module | Assertions |
+|-----------|--------|------------|
+| `test_http_parser.cpp` | HTTP/1.1 Parser | GET/POST parsing, header extraction, incremental feed |
+| `test_config_parser.cpp` | Config Parser | Server blocks, location blocks, proxy_pass, rate_limit, error_pages |
+| `test_cache.cpp` | LRU Cache | Put/get, miss detection, hit ratio, eviction, thread safety |
+| `test_rate_limiter.cpp` | Rate Limiter | Allow/block, per-IP isolation, disabled mode, token refill |
+| `test_router.cpp` | URL Router | Exact match, prefix match, longest-prefix priority, method filtering |
+| `test_load_balancer.cpp` | Load Balancer | Round-robin cycling, dead-node skipping, connection tracking |
+
+---
+
+## 📂 Project Structure
+
+```
+VeloxServe/
+├── CMakeLists.txt               # Build system (C++17, pthreads)
+├── veloxserve.conf              # NGINX-style configuration
+├── config.json                  # Runtime tuning parameters
+├── Dockerfile                   # Multi-stage production build
+├── docker-compose.yml           # One-command deployment
+├── README.md
+│
+├── include/
+│   ├── core/                    # Server engine layer
+│   │   ├── server.h             #   Main server class
+│   │   ├── epoll_wrapper.h      #   Epoll I/O abstraction
+│   │   ├── thread_pool.h        #   Worker thread dispatcher
+│   │   └── connection.h         #   Connection state machine
+│   ├── config/                  # Configuration layer
+│   │   ├── config_parser.h      #   Recursive-descent parser
+│   │   ├── server_config.h      #   Server block model
+│   │   └── location_config.h    #   Location block model
+│   ├── http/                    # Protocol layer
+│   │   ├── http_parser.h        #   Incremental HTTP/1.1 parser
+│   │   ├── http_response.h      #   Response builder
+│   │   ├── router.h             #   Longest-prefix URL matcher
+│   │   └── mime_types.h         #   MIME type registry
+│   ├── middleware/              # Processing pipeline
+│   │   ├── rate_limiter.h       #   Token-bucket per-IP limiter
+│   │   ├── cache.h              #   LRU cache with TTL
+│   │   └── logger.h             #   Apache Combined Format logger
+│   └── modules/                 # Feature handlers
+│       ├── static_handler.h     #   Static file serving
+│       ├── proxy_handler.h      #   Reverse proxy forwarding
+│       └── load_balancer.h      #   Round-robin load balancer
+│
+├── src/                         # Implementation files (mirrors include/)
+│   └── main.cpp                 #   Entry point with CLI + signal handling
+│
+├── tests/                       # Unit test suite
+│   ├── test_http_parser.cpp
+│   ├── test_config_parser.cpp
+│   ├── test_cache.cpp
+│   ├── test_rate_limiter.cpp
+│   ├── test_router.cpp
+│   └── test_load_balancer.cpp
+│
+├── scripts/                     # Automation tools
+│   ├── benchmark.sh             #   wrk performance benchmarking
+│   ├── stress_test.sh           #   Extreme concurrency stress testing
+│   └── health_check.sh          #   Continuous health monitoring
+│
+├── www/                         # Default web root
+│   ├── index.html               #   Premium dark mode dashboard
+│   └── errors/
+│       ├── 404.html
+│       └── 500.html
+│
+└── logs/                        # Runtime logs (auto-generated)
+    ├── access.log
+    └── error.log
+```
+
+---
+
+## 🔧 Automation Scripts
+
+Three production-grade Bash scripts are included for operational workflows:
+
+```bash
+# Run full benchmark suite against VeloxServe
+./scripts/benchmark.sh localhost 8080
+
+# Hammer the server with extreme concurrency to detect crashes
+./scripts/stress_test.sh localhost 8080
+
+# Continuously monitor server health with live metrics
+./scripts/health_check.sh localhost 8080 5
+```
+
+---
+
+<div align="center">
+  <p><em>Architected and engineered relentlessly from scratch in C++17 without external networking frameworks.</em></p>
+</div>
+
